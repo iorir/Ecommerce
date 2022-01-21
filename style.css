@@ -8,6 +8,12 @@
 .navbar-bg {
     background-color: rgba(224, 168, 238, 0.542);
 }
+ul{
+    list-style-type: none;
+}
+li>a{
+    text-decoration: none;
+}
 a:hover{
 color: rgb(79, 35, 111);
 }
