@@ -6,26 +6,26 @@
   width: 6rem;
 }
 .navbar-bg {
-    background-color: rgba(224, 168, 238, 0.542);
+  background-color: rgba(224, 168, 238, 0.542);
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
-li>a{
-    text-decoration: none;
+li > a {
+  text-decoration: none;
 }
-a:hover{
-color: rgb(79, 35, 111);
+a:hover {
+  color: rgb(79, 35, 111);
 }
-.card-text{
+.card-text {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.card{
+.card {
   height: 27rem;
   margin-bottom: 3rem;
 }
-.card-img-top{
-height: 15rem;
+.card-img-top {
+  height: 15rem;
 }
