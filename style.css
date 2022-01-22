@@ -17,3 +17,15 @@ li>a{
 a:hover{
 color: rgb(79, 35, 111);
 }
+.card-text{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.card{
+  height: 27rem;
+  margin-bottom: 3rem;
+}
+.card-img-top{
+height: 15rem;
+}
