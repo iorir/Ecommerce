@@ -15,7 +15,7 @@ li > a {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(79, 35, 111);
+  color: rgb(102, 44, 143);
 }
 .card-text {
   text-overflow: ellipsis;
@@ -28,4 +28,7 @@ a:hover {
 }
 .card-img-top {
   height: 15rem;
+}
+.bg-news {
+  background-color: rgba(91, 162, 255, 0.535);
 }
