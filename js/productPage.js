@@ -1,5 +1,4 @@
 let productInfo = JSON.parse(localStorage.getItem("item"));
-console.log(productInfo);
 const productDesc = document.querySelector("#productDesc");
 const productImg = document.querySelector("#productImg");
 productImg.setAttribute("src", productInfo.images[0].normal);
