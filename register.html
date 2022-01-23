@@ -14,7 +14,7 @@
     <title>Home Page</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container d-flex flex-column min-vh-100">
       <div class="navbar navbar-bg px-3 rounded-2 mt-3">
         <!-- left section of navbar with logo start-->
         <div class="d-flex">
@@ -66,15 +66,31 @@
         </div>
       </div>
       <!-- right section of navbar end -->
-      <!-- product section start -->
-      <div class="mt-4 py-5 navbar-bg">
-        <div class="row">
-          <div class="col-6">
-            <img class="w-100 p-3" src="" alt="" id="productImg" />
-          </div>
-          <div class="col-6 mt-5" id="productDesc"></div>
+      <!-- login start -->
+      <div class=" mt-5 mb-5 navbar-bg p-5">
+          <div class="offset-3 col-6 ">
+            <h5 class="text-center text-primary">Kayıt Ol</h5>
+            <form action="" class="col-3 w-100 d-flex flex-column align-items-center p-4">
+            <div >
+                
+                <label  for="usersName">Ad: </label> <br>
+                <input  type="text" id="userName"><br>
+                <label class="mt-2" for="userSurname">Soyad: </label><br>
+                <input  type="text" id="userSurname"><br>
+                <label class="mt-2" for="userPhone">Telefon Numarası: </label><br>
+                <input  type="text" id="userPhone"><br>
+                <label class="mt-2" for="userMail">Mail: </label><br>
+                <input  type="text" id="userMail"><br>
+                <label class="mt-2" for="userPass">Şifre: </label><br>
+                <input  type="text" id="userPass">
+            </div>
+            <div class="flex-row mt-4">
+                <button class="btn btn-primary">Kayıt Ol</button>
+            </form>
         </div>
-        <!-- product section end -->
+          </div>
+      
+        <!-- login end -->
       </div>
       <!-- footer start -->
       <div class="mt-4 pt-3 navbar-bg h-100 rounded-3">
@@ -99,7 +115,7 @@
               <a class="ms-4 text-decoration-none" href="./basket.html"
                 >Sepet</a
               >
-            </li>
+            </li>   
           </ul>
           <ul class="d-flex flex-column col-4 text-center fs-6">
             <li>
@@ -130,7 +146,7 @@
           </div>
         </div>
       </div>
-
+    </div>
       <!-- footer end -->
     </div>
     <script src="js/productPage.js"></script>
