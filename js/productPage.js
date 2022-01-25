@@ -8,5 +8,5 @@ ${productInfo.description}
 </p>
 <div class="text-center d-flex justify-content-center">
   <span class="col-3 my-auto">Fiyat: ${productInfo.price}₺</span
-  ><button class="ms-3 btn btn-primary">Sepete Ekle</button>
+  ><button class="ms-3 btn btn-primary" id="addBasket">Sepete Ekle</button>
 </div>`;
