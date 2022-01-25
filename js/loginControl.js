@@ -8,7 +8,6 @@ if (localStorage.getItem("userInfo")) {
 } else if (sessionStorage.getItem("userInfo")) {
   userInfoSession = JSON.parse(sessionStorage.getItem("userInfo"));
 }
-console.log(userInfoArray);
 if (userInfoArray.length > 0) {
   navbarRiSec.innerHTML = "";
   logReg.style.display = "none";

@@ -35,7 +35,7 @@ const registerApi = (link, param1, param2, param3, param4, param5) => {
     });
 };
 
-const a = () => {
+const submitRegister = () => {
   registerApi(
     "userRegister.php",
     userName.value,
