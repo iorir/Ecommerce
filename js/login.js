@@ -1,6 +1,7 @@
 const userMail = document.querySelector("#userMail");
 const userPass = document.querySelector("#userPass");
 const loginBtn = document.querySelector("#loginBtn");
+const rememberMe = document.querySelector("#rememberMe");
 let userInfo = [];
 const loginApi = (link, param1, param2) => {
   let url = new URL(`https://www.jsonbulut.com/json/${link}`),
@@ -21,12 +22,20 @@ const loginApi = (link, param1, param2) => {
         userInfo = [
           {
             userEmail: param1,
-            userPass: param2,
+            userPass: btoa(param2),
+            userName: items.user[0].bilgiler.userName,
+            userSurname: items.user[0].bilgiler.userSurname,
           },
         ];
-        localStorage.setItem("userInfo", JSON.stringify(userInfo));
-        window.location.href = "homepage.html";
-        /* localStorage.setItem("userInfo", JSON.stringify(param1, param2)); */
+        if (rememberMe.checked) {
+          sessionStorage.removeItem("userInfo");
+          localStorage.setItem("userInfo", JSON.stringify(userInfo));
+          window.location.href = "homepage.html";
+        } else {
+          localStorage.removeItem("userInfo");
+          sessionStorage.setItem("userInfo", JSON.stringify(userInfo));
+          window.location.href = "homepage.html";
+        }
       } else {
         alert(items.user[0].mesaj);
       }

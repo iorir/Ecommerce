@@ -14,7 +14,6 @@ const newsApi = (link, param1) => {
     .then((response) => response.json())
     .then((items) => {
       let newsRow = document.querySelector("#newsRow");
-      console.log(items.News[0].Haber_Bilgileri);
       let newsInformation = items.News[0].Haber_Bilgileri;
       newsArray = newsInformation;
       newsInformation.map((e, index) => {
