@@ -51,47 +51,33 @@
         <!-- left section of navbar with logo end-->
         <!-- right section of navbar start -->
         <div>
-          <ul class="d-flex list-unstyled fs-4">
-            <li>
-              <a class="ms-4 text-decoration-none" href="./login.html"
-                >Giriş Yap</a
-              >
-            </li>
-            <li>
-              <a class="ms-4 text-decoration-none" href="./register.html"
-                >Kayıt Ol</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- right section of navbar end -->
-      <!-- login start -->
-      <div class=" mt-5 mb-5 navbar-bg p-5">
-          <div class="offset-3 col-6 ">
-            <h5 class="text-center text-primary">Kayıt Ol</h5>
-            <div class="col-3 w-100 d-flex flex-column align-items-center p-4">
-            <form action="" onsubmit="submitRegister();return false;" class="" id="signForm">
-                <label  for="usersName">Ad: </label> <br>
-                <input required  type="text" id="userName" pattern="[A-Za-z]{2,}" title="Sadece a-z giriş yapın. Min. 2 karakter"><br>
-                <label class="mt-2" for="userSurname" >Soyad: </label><br>
-                <input required  type="text" id="userSurname" pattern="[A-Za-z]{2,}" title="Sadece a-z giriş yapın. Min. 2 karakter"><br>
-                <label class="mt-2" for="userPhone">Telefon Numarası: </label><br>
-                <input required  type="tel" id="userPhone" pattern="[1-9]{1}[0-9]{9}" title="sadece numara girişi yapın. 10 karaker girilmeli." placeholder="Başında sıfır olmadan"><br>
-                <label class="mt-2" for="userMail">Mail: </label><br>
-                <input required  type="email" id="userMail"  title="geçerli bir mail adresi giriniz"><br>
-                <label class="mt-2" for="userPass">Şifre: </label><br>
-                <input required  type="password" id="userPass" pattern=".{6,}" title="şifre uzunluğu 6 dan büyük olmalı"><br>
-                <button type="submit" class="btn btn-primary mt-4" id="registerBtn">Kayıt Ol</button>
-              </form>
-            </div>
-        </div>
+          <div id="navbarRiSec"></div>
+          <div id="logReg">
+            <ul class="d-flex list-unstyled fs-4">
+              <li>
+                <a class="ms-4 text-decoration-none" href="./login.html"
+                  >Giriş Yap</a
+                >
+              </li>
+              <li>
+                <a class="ms-4 text-decoration-none" href="./register.html"
+                  >Kayıt Ol</a
+                >
+              </li>
+            </ul>
           </div>
-
-        <!-- login end -->
+        </div>
+        <!-- right section of navbar end -->
+      </div>
+      <!-- basket start -->
+      <div class=" mt-4" id ="product-purchase-container">
       
+    </div>
+      <div class="row  mx-auto w-100 my-5" id="basketItems">
+      </div>
+        <!-- basket end -->
       <!-- footer start -->
-      <div class="mt-4 pt-3 navbar-bg h-100 rounded-3">
+      <div class="mt-4 pt-3 navbar-bg h-100 rounded-3 bottom mt-auto">
         <div class="row mt-1">
           <ul class="d-flex flex-column col-4 text-center fs-6">
             <li>
@@ -113,7 +99,7 @@
               <a class="ms-4 text-decoration-none" href="./basket.html"
                 >Sepet</a
               >
-            </li>   
+            </li>
           </ul>
           <ul class="d-flex flex-column col-4 text-center fs-6">
             <li>
@@ -145,11 +131,27 @@
         </div>
       </div>
     </div>
-  </div>
       <!-- footer end -->
     </div>
-    <script src="js/register.js"></script>
-    <script src="js/loginControl.js"></script>
+    <!-- modal start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title" id="exampleModalLabel">Silmek istediğinize emin misiniz?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer border-top-0 justify-content-center">
+            <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">İptal</button>
+            <button type="button" class="btn btn-danger px-4" data-bs-dismiss="modal" id ="deleteModalBtn">Sil</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <script src="./js/loginControl.js"></script>
+    <script src="./js/basket.js"></script>
+    <script src="./js/purchase.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

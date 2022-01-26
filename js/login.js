@@ -25,6 +25,7 @@ const loginApi = (link, param1, param2) => {
             userPass: btoa(param2),
             userName: items.user[0].bilgiler.userName,
             userSurname: items.user[0].bilgiler.userSurname,
+            userId: items.user[0].bilgiler.userId,
           },
         ];
         if (rememberMe.checked) {

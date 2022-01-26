@@ -7,14 +7,13 @@ if (localStorage.getItem("userInfo")) {
   userInfoSessionB = JSON.parse(sessionStorage.getItem("userInfo"));
 }
 addBasket.addEventListener("click", () => {
-  if (userInfoArrayB || userInfoSessionB) {
+  if (userInfoArrayB.length > 0 || userInfoSessionB.length > 0) {
     let itemInfo = JSON.parse(localStorage.getItem("item"));
     let basketOld = JSON.parse(localStorage.getItem("basket"));
     if (basketOld) {
       let newwyArray = [];
       basketOld.map((item) => newwyArray.push(item));
       newwyArray.push(itemInfo);
-      console.log(newwyArray);
       localStorage.setItem("basket", JSON.stringify(newwyArray));
     } else {
       localStorage.setItem("basket", JSON.stringify([itemInfo]));
