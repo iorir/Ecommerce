@@ -31,18 +31,18 @@ const loginApi = (link, param1, param2) => {
         if (rememberMe.checked) {
           sessionStorage.removeItem("userInfo");
           localStorage.setItem("userInfo", JSON.stringify(userInfo));
-          if (localStorage.getItem("item") === null) {
-            window.location.href = "homepage.html";
-          } else {
+          if (localStorage.getItem("item").length > 0) {
             window.location.href = "productPage.html";
+          } else {
+            window.location.href = "homepage.html";
           }
         } else {
           localStorage.removeItem("userInfo");
           sessionStorage.setItem("userInfo", JSON.stringify(userInfo));
-          if (localStorage.getItem("item") === null) {
-            window.location.href = "homepage.html";
-          } else {
+          if (localStorage.getItem("item").length > 0) {
             window.location.href = "productPage.html";
+          } else {
+            window.location.href = "homepage.html";
           }
         }
       } else {

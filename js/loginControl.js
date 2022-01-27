@@ -13,15 +13,15 @@ if (userInfoArray.length > 0) {
   basketLiItem.style.display = "block";
   navbarRiSec.innerHTML = "";
   logReg.style.display = "none";
-  navbarRiSec.innerHTML += `<span class="me-5 text-primary fs-5">
-  ${userInfoArray[0].userName} ${userInfoArray[0].userSurname}</span><br>
+  navbarRiSec.innerHTML += `<a href="profile.html" class=""><span class="me-5 text-decoration-none text-primary fs-5">
+  ${userInfoArray[0].userName} ${userInfoArray[0].userSurname}</span> </a> <br>
   <a href="homepage.html" onclick="logoutBtn()">Çıkış</a>`;
 } else if (userInfoSession.length > 0) {
   basketLiItem.style.display = "block";
   navbarRiSec.innerHTML = "";
   logReg.style.display = "none";
-  navbarRiSec.innerHTML += `<span class="me-5 text-primary fs-5">
-  ${userInfoSession[0].userName} ${userInfoSession[0].userSurname}</span><br>
+  navbarRiSec.innerHTML += `<a href="profile.html"><span class="me-5 text-primary fs-5">
+  ${userInfoSession[0].userName} ${userInfoSession[0].userSurname}</span></a><br>
   <a href="homepage.html" onclick="logoutBtn()">Çıkış</a>`;
 } else {
 }

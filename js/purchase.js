@@ -19,13 +19,16 @@ const purchaseApi = (link, param1, param2) => {
   });
   fetch(url)
     .then((response) => response.json())
-    .then((items) => {});
+    .then((items) => {
+      console.log(items);
+    });
 };
 if (purchaseBtn) {
   purchaseBtn.addEventListener("click", () => {
-    console.log(userData[0].userId);
     localBsktt.map((item) => {
       purchaseApi("orderForm.php", userData[0].userId, item.productId);
+      localStorage.setItem("basket", JSON.stringify(""));
+      window.location.href = "homepage.html";
     });
   });
 }

@@ -15,8 +15,10 @@ addBasket.addEventListener("click", () => {
       basketOld.map((item) => newwyArray.push(item));
       newwyArray.push(itemInfo);
       localStorage.setItem("basket", JSON.stringify(newwyArray));
+      window.location.href = "basket.html";
     } else {
       localStorage.setItem("basket", JSON.stringify([itemInfo]));
+      window.location.href = "basket.html";
     }
   } else {
     window.location.href = "login.html";

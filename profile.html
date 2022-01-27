@@ -69,13 +69,35 @@
         </div>
         <!-- right section of navbar end -->
       </div>
-      <!-- news start -->
-      <div class="navbar-bg rounded-3 mt-5 mb-5">
-        <h5 class="mt-3 text-center">Haberler</h5>
-        <div class="row mt-3" id="newsRow"></div>
-      </div>
-      <!-- news end -->
-
+      <!-- login start -->
+      <div class=" mt-5 mb-5 navbar-bg p-5">
+          <div class="row">
+            <div class="col-6">
+                <form action="#"  class="d-flex flex-column" onsubmit="updateInformation() ; return false">
+                    <label for="user-id" class="col-6 mx-auto">ID:</label>
+                    <input type="number" id="user-id" class="col-6 mx-auto mx-auto" class="col-6 mx-auto" readonly>
+                    <label for="user-name" class="col-6 mx-auto">Ad:</label>
+                    <input type="text" id="user-name" class="col-6 mx-auto">
+                    <label for="user-surname" class="col-6 mx-auto">Soyad:</label>
+                    <input type="text" id="user-surname" class="col-6 mx-auto">
+                    <label for="user-email" class="col-6 mx-auto">Email:</label>
+                    <input type="email" id="user-email" class="col-6 mx-auto">
+                    <label for="user-phone" class="col-6 mx-auto">Telefon:</label>
+                    <input type="tel" id="user-phone" class="col-6 mx-auto">
+                    <label for="user-pass" class="col-6 mx-auto">Şifre:</label>
+                    <input type="password" id="user-pass" class="col-6 mx-auto">
+                    <button class="btn btn-primary col-6 mx-auto mt-3" id="submit-btnn" type="submit">Güncelle</button>
+                </form>
+            </div>
+            <div class="col-6" >
+              <div class="border border-primary" id="old-orders">
+                
+              </div>
+            </div>
+          </div>
+          </div>
+        <!-- login end -->
+    
       <!-- footer start -->
       <div class="mt-4 pt-3 navbar-bg h-100 mt-auto rounded-3">
         <div class="row mt-1">
@@ -121,43 +143,10 @@
       </div>
       <!-- footer end -->
     </div>
-    <!-- modal start -->
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body" id="modalBody"></div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- modal end -->
+  </div>
     <script src="./js/loginControl.js"></script>
-    <script src="js/news.js"></script>
+    <script src="./js/userConfProfile.js"></script>
+    <script src="./js/oldOrders.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -6,7 +6,7 @@
   width: 6rem;
 }
 .navbar-bg {
-  background-color: rgba(224, 168, 238, 0.542);
+  background-color: rgba(248, 108, 0, 0.364);
 }
 ul {
   list-style-type: none;
@@ -15,7 +15,7 @@ li > a {
   text-decoration: none;
 }
 a:hover {
-  color: rgb(102, 44, 143);
+  color: rgba(255, 0, 0, 0.576);
 }
 .card-text {
   text-overflow: ellipsis;
@@ -30,5 +30,9 @@ a:hover {
   height: 15rem;
 }
 .bg-news {
-  background-color: rgba(91, 162, 255, 0.535);
+  background-color: rgb(5, 113, 255);
+}
+.img-size {
+  width: 100px;
+  height: 100px;
 }

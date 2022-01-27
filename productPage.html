@@ -14,7 +14,7 @@
     <title>Home Page</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container d-flex flex-column min-vh-100">
       <div class="navbar navbar-bg px-3 rounded-2 mt-3">
         <!-- left section of navbar with logo start-->
         <div class="d-flex">
@@ -98,48 +98,46 @@
         <!-- product section end -->
       </div>
       <!-- footer start -->
-      <div class="mt-4 pt-3 navbar-bg h-100 rounded-3">
+      <div class="mt-4 pt-3 navbar-bg h-100 mt-auto rounded-3">
         <div class="row mt-1">
           <ul class="d-flex flex-column col-4 text-center fs-6">
             <li>
-              <a class="ms-4 text-decoration-none" href="./homepage.html"
+              <a
+                class="ms-4 text-decoration-none"
+                id="foot-home"
+                href="./homepage.html"
                 >Ana Sayfa</a
               >
             </li>
             <li>
-              <a class="ms-4 text-decoration-none" href="./news.html"
+              <a
+                class="ms-4 text-decoration-none"
+                id="foot-news"
+                href="./news.html"
                 >Haberler</a
               >
             </li>
             <li>
-              <a class="ms-4 text-decoration-none" href="./contact.html"
+              <a
+                class="ms-4 text-decoration-none"
+                id="foot-contact"
+                href="./contact.html"
                 >İletişim</a
-              >
-            </li>
-            <li>
-              <a class="ms-4 text-decoration-none" href="./basket.html"
-                >Sepet</a
               >
             </li>
           </ul>
           <ul class="d-flex flex-column col-4 text-center fs-6">
             <li>
-              <a class="ms-4 text-decoration-none" href="./homepage.html"
-                >Lorem.</a
-              >
+              <a class="ms-4 text-decoration-none" href="#">Lorem.</a>
             </li>
             <li>
-              <a class="ms-4 text-decoration-none" href="./news.html">Lorem.</a>
+              <a class="ms-4 text-decoration-none" href="#">Lorem.</a>
             </li>
             <li>
-              <a class="ms-4 text-decoration-none" href="./contact.html"
-                >Lorem.</a
-              >
+              <a class="ms-4 text-decoration-none" href="#">Lorem.</a>
             </li>
             <li>
-              <a class="ms-4 text-decoration-none" href="./basket.html"
-                >Lorem.</a
-              >
+              <a class="ms-4 text-decoration-none" href="#">Lorem.</a>
             </li>
           </ul>
           <div class="d-flex flex-column col-4 fs-6">
@@ -151,11 +149,11 @@
           </div>
         </div>
       </div>
-
       <!-- footer end -->
     </div>
     <script src="./js/productPage.js"></script>
     <script src="./js/loginControl.js"></script>
+    <script src="./js/clearLocalData.js"></script>
     <script src="./js/addBasket.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

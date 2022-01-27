@@ -67,31 +67,73 @@
       </div>
       <!-- right section of navbar end -->
       <!-- login start -->
-      <div class=" mt-5 mb-5 navbar-bg p-5">
-          <div class="offset-3 col-6 ">
-            <h5 class="text-center text-primary">Kayıt Ol</h5>
-            <div class="col-3 w-100 d-flex flex-column align-items-center p-4">
-            <form action="" onsubmit="submitRegister();return false;" class="" id="signForm">
-                <label  for="usersName">Ad: </label> <br>
-                <input required  type="text" id="userName" pattern="[A-Za-z]{2,}" title="Sadece a-z giriş yapın. Min. 2 karakter"><br>
-                <label class="mt-2" for="userSurname" >Soyad: </label><br>
-                <input required  type="text" id="userSurname" pattern="[A-Za-z]{2,}" title="Sadece a-z giriş yapın. Min. 2 karakter"><br>
-                <label class="mt-2" for="userPhone">Telefon Numarası: </label><br>
-                <input required  type="tel" id="userPhone" pattern="[1-9]{1}[0-9]{9}" title="sadece numara girişi yapın. 10 karaker girilmeli." placeholder="Başında sıfır olmadan"><br>
-                <label class="mt-2" for="userMail">Mail: </label><br>
-                <input required  type="email" id="userMail"  title="geçerli bir mail adresi giriniz"><br>
-                <label class="mt-2" for="userPass">Şifre: </label><br>
-                <input required  type="password" id="userPass" pattern=".{6,}" title="şifre uzunluğu 6 dan büyük olmalı"><br>
-                <button type="submit" class="btn btn-primary mt-4" id="registerBtn">Kayıt Ol</button>
-              </form>
-            </div>
-        </div>
+      <div class="mt-5 mb-5 navbar-bg p-5">
+        <div class="offset-3 col-6">
+          <h5 class="text-center text-primary">Kayıt Ol</h5>
+          <div class="col-3 w-100 d-flex flex-column align-items-center p-4">
+            <form
+              action=""
+              onsubmit="submitRegister();return false;"
+              class=""
+              id="signForm"
+            >
+              <label for="usersName">Ad: </label> <br />
+              <input
+                required
+                type="text"
+                id="userName"
+                pattern="[A-Za-z]{2,}"
+                title="Sadece a-z giriş yapın. Min. 2 karakter"
+              /><br />
+              <label class="mt-2" for="userSurname">Soyad: </label><br />
+              <input
+                required
+                type="text"
+                id="userSurname"
+                pattern="[A-Za-z]{2,}"
+                title="Sadece a-z giriş yapın. Min. 2 karakter"
+              /><br />
+              <label class="mt-2" for="userPhone">Telefon Numarası: </label
+              ><br />
+              <input
+                required
+                type="tel"
+                id="userPhone"
+                pattern="[1-9]{1}[0-9]{9}"
+                title="sadece numara girişi yapın. 10 karaker girilmeli."
+                placeholder="Başında sıfır olmadan"
+              /><br />
+              <label class="mt-2" for="userMail">Mail: </label><br />
+              <input
+                required
+                type="email"
+                id="userMail"
+                title="geçerli bir mail adresi giriniz"
+              /><br />
+              <label class="mt-2" for="userPass">Şifre: </label><br />
+              <input
+                required
+                type="password"
+                id="userPass"
+                pattern=".{6,}"
+                title="şifre uzunluğu 6 dan büyük olmalı"
+              /><br />
+              <button
+                type="submit"
+                class="btn btn-primary mt-4"
+                id="registerBtn"
+              >
+                Kayıt Ol
+              </button>
+            </form>
           </div>
+        </div>
+      </div>
 
-        <!-- login end -->
-      
+      <!-- login end -->
+
       <!-- footer start -->
-      <div class="mt-4 pt-3 navbar-bg h-100 rounded-3 mt-auto">
+      <div class="mt-4 pt-3 navbar-bg h-100 mt-auto rounded-3">
         <div class="row mt-1">
           <ul class="d-flex flex-column col-4 text-center fs-6">
             <li>
@@ -109,30 +151,19 @@
                 >İletişim</a
               >
             </li>
-            <li>
-              <a class="ms-4 text-decoration-none" href="./basket.html"
-                >Sepet</a
-              >
-            </li>   
           </ul>
           <ul class="d-flex flex-column col-4 text-center fs-6">
             <li>
-              <a class="ms-4 text-decoration-none" href="./homepage.html"
-                >Lorem.</a
-              >
+              <a class="ms-4 text-decoration-none" href="#">Lorem.</a>
             </li>
             <li>
-              <a class="ms-4 text-decoration-none" href="./news.html">Lorem.</a>
+              <a class="ms-4 text-decoration-none" href="#">Lorem.</a>
             </li>
             <li>
-              <a class="ms-4 text-decoration-none" href="./contact.html"
-                >Lorem.</a
-              >
+              <a class="ms-4 text-decoration-none" href="#">Lorem.</a>
             </li>
             <li>
-              <a class="ms-4 text-decoration-none" href="./basket.html"
-                >Lorem.</a
-              >
+              <a class="ms-4 text-decoration-none" href="#">Lorem.</a>
             </li>
           </ul>
           <div class="d-flex flex-column col-4 fs-6">
@@ -144,8 +175,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
       <!-- footer end -->
     </div>
     <script src="js/register.js"></script>

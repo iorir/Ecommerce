@@ -1,3 +1,4 @@
+let filteredArray = [];
 let itemID = window.location.href.split("?");
 let productSection = document.querySelector("#productSection");
 const catFilterApi = (link, param1, param2) => {
@@ -14,6 +15,7 @@ const catFilterApi = (link, param1, param2) => {
     .then((response) => response.json())
     .then((items) => {
       let filteredProducts = items.Products[0].bilgiler;
+      filteredArray = filteredProducts;
       if (filteredProducts) {
         filteredProducts.map((e, index) => {
           productSection.innerHTML += `<div class="col-4 outerCard"><div class="card mx-auto" style="width: 18rem;">
@@ -21,7 +23,7 @@ const catFilterApi = (link, param1, param2) => {
         <div class="card-body flex-column d-flex">
           <h5 class="card-title">${e.productName}</h5>
           <p class="card-text">${e.description}</p>
-          <button class="btn btn-primary mt-auto" onClick=sendInformation(${index})>Detay</button>
+          <button class="btn btn-primary mt-auto" onClick=sendInfo(${index})>Detay</button>
         </div>
       </div>
       </div>`;
@@ -32,3 +34,9 @@ const catFilterApi = (link, param1, param2) => {
     });
 };
 catFilterApi("product.php", "0", itemID[1]);
+
+const sendInfo = (info) => {
+  localStorage.setItem("item", "");
+  localStorage.setItem("item", JSON.stringify(filteredArray[info]));
+  window.location.href = "productPage.html";
+};
