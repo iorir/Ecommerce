@@ -17,7 +17,7 @@ const apiProducts = (link, param1, param2, param3) => {
       newArray = productsInfo;
       let rowSec = document.querySelector("#rowSection");
       productsInfo.map((e, index) => {
-        rowSec.innerHTML += `<div class="col-4 outerCard"><div class="card mx-auto" style="width: 18rem;">
+        rowSec.innerHTML += `<div class="col-12 col-lg-4 col-md-6  outerCard"><div class="card mx-auto" style="width: 18rem;">
         <img src="${e.images[0].normal}" class="card-img-top" alt="...">
         <div class="card-body flex-column d-flex">
           <h5 class="card-title">${e.productName}</h5>

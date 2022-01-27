@@ -15,33 +15,41 @@
   </head>
   <body>
     <div class="container d-flex flex-column min-vh-100">
-      <div class="navbar navbar-bg px-3 rounded-2 mt-3">
-        <!-- left section of navbar with logo start-->
-        <div class="d-flex">
+      <div class="navbar d-flex flex-column text-center navbar-bg px-3 rounded-2 mt-3 flex-md-row " >
+        <!-- left section of navbar with logo start -->
+        <div class="d-flex flex-column flex-md-row align-items-md-center">
           <a href="./homepage.html">
             <img
               class="logo"
               src="./assets/kindpng_813253.png"
               alt="website-logo"
             />
-            <ul class="d-flex align-items-center list-unstyled fs-4">
+            <ul class="d-flex flex-md-row flex-column list-unstyled fs-4 ms-md-4">
               <li>
-                <a class="ms-4 text-decoration-none" href="./homepage.html"
+                <a
+                  class=" text-decoration-none ms-md-4"
+                  href="./homepage.html"
                   >Ana Sayfa</a
                 >
               </li>
               <li>
-                <a class="ms-4 text-decoration-none" href="./news.html"
+                <a
+                  class=" text-decoration-none ms-md-4"
+                  href="./news.html"
                   >Haberler</a
                 >
               </li>
-              <li>
-                <a class="ms-4 text-decoration-none" href="./contact.html"
+              
+                <a
+                  class=" text-decoration-none ms-md-4"
+                  href="./contact.html"
                   >İletişim</a
                 >
               </li>
-              <li id="basketLiItem" style="display: none">
-                <a class="ms-4 text-decoration-none" href="./basket.html"
+              <li id="basketLiItem" style="display: none ms-md-4">
+                <a
+                  class=" text-decoration-none ms-md-4"
+                  href="./basket.html"
                   >Sepet</a
                 >
               </li>
@@ -50,22 +58,29 @@
         </div>
         <!-- left section of navbar with logo end-->
         <!-- right section of navbar start -->
-        <div>
-          <ul class="d-flex list-unstyled fs-4">
-            <li>
-              <a class="ms-4 text-decoration-none" href="./login.html"
-                >Giriş Yap</a
-              >
-            </li>
-            <li>
-              <a class="ms-4 text-decoration-none" href="./register.html"
-                >Kayıt Ol</a
-              >
-            </li>
-          </ul>
+        <div class="ms-md-auto me-md-0">
+          <div id="navbarRiSec" class="me-md-5"></div>
+          <div id="logReg" >
+            <ul class="d-flex list-unstyled fs-4 me-md-4 ">
+              <li>
+                <a
+                  class=" text-decoration-none me-4"
+                  href="./login.html"
+                  >Giriş Yap</a
+                >
+              </li>
+              <li>
+                <a
+                  class=" text-decoration-none"
+                  href="./register.html"
+                  >Kayıt Ol</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <!-- right section of navbar end -->
       </div>
-      <!-- right section of navbar end -->
       <!-- login start -->
       <div class="mt-5 mb-5 navbar-bg p-5">
         <div class="offset-3 col-6">

@@ -18,7 +18,7 @@ const catFilterApi = (link, param1, param2) => {
       filteredArray = filteredProducts;
       if (filteredProducts) {
         filteredProducts.map((e, index) => {
-          productSection.innerHTML += `<div class="col-4 outerCard"><div class="card mx-auto" style="width: 18rem;">
+          productSection.innerHTML += `<div class="col-sm-6 mt-5 col-lg-4 outerCard"><div class="card mx-auto" style="width: 18rem;">
         <img src="${e.images[0].normal}" class="card-img-top" alt="...">
         <div class="card-body flex-column d-flex">
           <h5 class="card-title">${e.productName}</h5>
