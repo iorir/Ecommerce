@@ -32,7 +32,7 @@ if (window.location.href === "http://127.0.0.1:5500/homepage.html") {
 const logoutBtn = () => {
   localStorage.removeItem("userInfo");
   sessionStorage.removeItem("userInfo");
-  localStorage.removeItem("basket");
+  localStorage.setItem("basket", JSON.stringify(""));
   window.location.href("homepage.html");
   logReg.display = "block";
   navbarRiSec.style.display = "none";

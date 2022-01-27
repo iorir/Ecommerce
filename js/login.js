@@ -31,11 +31,19 @@ const loginApi = (link, param1, param2) => {
         if (rememberMe.checked) {
           sessionStorage.removeItem("userInfo");
           localStorage.setItem("userInfo", JSON.stringify(userInfo));
-          window.location.href = "homepage.html";
+          if (localStorage.getItem("item") === null) {
+            window.location.href = "homepage.html";
+          } else {
+            window.location.href = "productPage.html";
+          }
         } else {
           localStorage.removeItem("userInfo");
           sessionStorage.setItem("userInfo", JSON.stringify(userInfo));
-          window.location.href = "homepage.html";
+          if (localStorage.getItem("item") === null) {
+            window.location.href = "homepage.html";
+          } else {
+            window.location.href = "productPage.html";
+          }
         }
       } else {
         alert(items.user[0].mesaj);

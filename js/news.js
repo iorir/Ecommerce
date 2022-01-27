@@ -37,3 +37,5 @@ const sendNews = (news) => {
   modalTitle.innerHTML = `${newsArray[news].title}`;
   modalBody.innerHTML = `${newsArray[news].l_description}`;
 };
+
+localStorage.setItem("item", "");
